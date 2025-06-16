@@ -1,0 +1,26 @@
+.container {
+  max-width: 430px;
+  min-height: 90vh;
+  margin: auto;
+  padding: 1rem;
+  background-color: #1f2937;
+}
+
+.title {
+  height: 36px;
+  background: linear-gradient(to right, #60a5fa, #a78bfa);
+  h1 {
+    text-align: center;
+    font-size: 25px;
+    margin: 0;
+    padding-top: 3px;
+    font-family: "Inter", sans-serif;
+  }
+}
+
+.description {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  color: #9ca3af;
+}
