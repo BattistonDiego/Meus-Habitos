@@ -14,13 +14,11 @@
     font-size: 25px;
     margin: 0;
     padding-top: 3px;
-    font-family: "Inter", sans-serif;
   }
 }
 
 .description {
   text-align: center;
-  font-family: "Inter", sans-serif;
   font-size: 13px;
   color: #9ca3af;
 }
@@ -30,4 +28,32 @@
   background-color: #111827;
   margin-top: 40px;
   border-radius: 12px;
+  border: 1px solid #e5e7eb26;
+  padding: 8px;
+
+  .water {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  p {
+    display: inline;
+    font-size: 15px;
+    color: #e5e7eb;
+  }
+
+  .done-check {
+    height: 38px;
+    border: 1px solid #e5e7eb26;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    input {
+      width: 20px;
+      height: 20px;
+    }
+  }
 }
