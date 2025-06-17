@@ -3,15 +3,15 @@
         <h1>Meus Hábitos</h1>
     </div>
 
-    <p class="description">Segunda-feira, 16 de junho de 2025</p>
+    <p class="description">{{dateFormated}}</p>
 
-    <div class="cards">
+    <div *ngFor="let routines of routineList" class="cards">
         <div class="water">
-            <img src="assets/svg/icon-water.svg" alt="">
-            <p>Beber Água</p>
+            <img [src]="'assets/svg/' + routines.iconName" alt="{{ routines.habitName }}">
+            <p>{{ routines.habitName }}</p>
         </div>
         <div class="done-check">
-            <input type="checkbox">
+            <input type="checkbox" [checked]="routines.value" (change)="onCheckboxChange(routines, $event)">
             <p>Concluído</p>
         </div>
     </div>
